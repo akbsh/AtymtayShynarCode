@@ -12,7 +12,7 @@ plt.imshow(gray, cmap='gray');
 #in order to detect images we need to turn it into blur, this way we can avoid the noise
 #the 9 9 is kernel, hover over whole picture, 0 is stdv
 #the more you increase the size of kernel the more blured it becomes
-Gaussianblur = cv2.GaussianBlur(gray, (13,13), 0)
+Gaussianblur = cv2.GaussianBlur(gray, (9,9), 0)
 plt.imshow(Gaussianblur, cmap='gray');
 
 #for detecting the edges Cany edge algorithm can be used in this case
